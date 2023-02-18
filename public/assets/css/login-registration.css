@@ -1,0 +1,63 @@
+.card_custom_title {
+    color: #2a2a2a;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.login-card-body,
+.register-card-body {
+    color: #2a2a2a;
+    font-size: 18px;
+}
+
+.css-zqtbdk {
+    display: inline-flex;
+    font-size: 16px;
+    border-radius: 3px;
+    color: rgb(66 66 66) !important;
+    transition: background 0.1s ease-out 0s,
+        box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38) 0s;
+    width: 100%;
+    line-height: 40px !important;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% !important;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px 0px !important;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.css-zqtbdk:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.css-zqtbdk div,
+.css-zqtbdk span {
+    display: flex !important;
+    -moz-box-pack: center;
+    justify-content: center;
+}
+
+.css-1vqao0l {
+    align-self: center;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    -moz-box-pack: center;
+    justify-content: center;
+}
+
+.css-t5emrf {
+    -moz-box-align: center;
+    align-items: center;
+    align-self: center;
+    flex: 1 1 auto;
+    margin: 0px 4px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: opacity 0.3s ease 0s;
+    opacity: 1;
+}

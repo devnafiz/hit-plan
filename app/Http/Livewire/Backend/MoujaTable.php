@@ -1,0 +1,105 @@
+<?php
+
+namespace App\Http\Livewire\Backend;
+
+use App\Models\Backend\Mouja;
+use Illuminate\Database\Eloquent\Builder;
+use Rappasoft\LaravelLivewireTables\DataTableComponent;
+use Rappasoft\LaravelLivewireTables\Views\Column;
+
+
+/**
+ * Class RolesTable.
+ */
+class MoujaTable extends DataTableComponent
+{
+  public array $sortNames = [
+    'email_verified_at' => 'Verified',
+    'two_factor_secret' => '2FA',
+  ];
+
+  public array $perPageAccepted = [10, 20, 50, 100];
+  public bool $perPageAll = false;
+
+  public string $defaultSortColumn = 'mouja_id';
+  public string $defaultSortDirection = 'desc';
+
+  protected string $pageName = 'Mouja';
+  protected string $tableName = 'Mouja';
+
+  public function exportSelected()
+  {
+    // if ($this->selectedRowsQuery->count() > 0) {
+    //   return (new CategoryExport($this->selectedRowsQuery))->download($this->tableName . '.xlsx');
+    // }
+    //   // Not included in package, just an example.
+    // $this->notify(__('You did not select any users to export.'), 'danger');
+  }
+
+  /**
+   * @return Builder
+   */
+  public function query(): Builder
+  {
+    return Mouja::with('division', 'district', 'kachari', 'upazila', 'kachari', 'station');
+  }
+
+  /**
+   * @return array
+   */
+  public function columns(): array
+  {
+    $this->index = $this->page > 1 ? ($this->page - 1) * $this->perPage : 0;
+    return [
+      Column::make(__('NO.'), 'no')
+        ->addClass('text-left')
+        ->format(function () {
+          return ++$this->index;
+        }),
+      Column::make(__('বিভাগ'), 'division.division_name')
+        ->addClass('text-left')
+        ->searchable(),
+      Column::make(__('কাচারীর'), 'kachari.kachari_name')
+        ->addClass('text-left')
+        ->searchable(),
+      Column::make(__('জেলা'), 'district.district_name')
+        ->addClass('text-left')
+        ->searchable(),
+      Column::make(__('উপজেলা'), 'upazila.upazila_name')
+        ->addClass('text-left')
+        ->searchable(),
+      Column::make(__('স্টেশন'), 'station.station_name')
+        ->addClass('text-left')
+        ->searchable(),
+      Column::make(__('মৌজা'), 'mouja_name')
+        ->addClass('text-left')
+        ->searchable(),
+
+      Column::make('Actions')
+        ->addClass('text-left')
+        ->format(function ($value, $column, $row) {
+          return view('backend.content.mouja.includes.actions')->with(['mouja' => $row->mouja_id]);
+        }),
+    ];
+  }
+
+  // public function setTableDataClass($attribute, $value): ?string
+  // {
+  //   $array = ['user:email', 'user:name'];
+  //   if (in_array($attribute->column, $array)) {
+  //     return 'text-left';
+  //   }
+  //   return 'text-center';
+  // }
+
+
+  // public function setTableRowClass($value)
+  // {
+  //   return $value->id;
+  // }
+
+  public function setTableRowId($value)
+  {
+    return $value->id;
+  }
+}

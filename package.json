@@ -1,0 +1,49 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "@babel/preset-react": "^7.13.13",
+        "@popperjs/core": "^2.5.1",
+        "alpinejs": "^2.3.5",
+        "axios": "^0.21.1",
+        "bootstrap": "^4.6.0",
+        "cross-env": "^7.0",
+        "jquery": "^3.6",
+        "laravel-mix": "^6.0.39",
+        "lodash": "^4.17.19",
+        "perfect-scrollbar": "^1.5.0",
+        "popper.js": "^1.16.1",
+        "postcss": "^8.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "resolve-url-loader": "^3.1.0",
+        "sass": "^1.32.11",
+        "sass-loader": "^11.0.1",
+        "sweetalert2": "^9.8.2"
+    },
+    "dependencies": {
+        "animate.css": "^4.1.1",
+        "bengali-number": "^1.1.0",
+        "jwt-decode": "^3.1.2",
+        "num-words": "^1.2.2",
+        "react-bootstrap": "^1.6.1",
+        "react-html-parser": "^2.0.2",
+        "react-loading-skeleton": "^2.2.0",
+        "react-owl-carousel": "^2.3.3",
+        "react-phone-number-input": "^3.1.25",
+        "react-redux": "^7.2.4",
+        "react-router-dom": "^5.2.1",
+        "redux": "^4.1.1",
+        "redux-devtools-extension": "^2.13.9",
+        "redux-thunk": "^2.3.0",
+        "web-vitals": "^2.1.0"
+    }
+}

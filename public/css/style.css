@@ -1,0 +1,248 @@
+.padding_infor_info {
+    padding: 35px 35px;
+    float: left;
+    width: 100%;
+}
+
+
+.heading1 h2 {
+    line-height: normal;
+    font-size: 21px;
+    font-weight: 400;
+    margin: 0;
+    padding-left: 0;
+    color: #15283c;
+    letter-spacing: 0px;
+}
+
+.margin_top_50 {
+    margin-top: 50px;
+}
+
+.margin_top_30 {
+    margin-top: 30px;
+}
+
+.margin_0 {
+    margin: 0 !important;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.verticle_center {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item {
+    font-size: 13px;
+}
+
+.column img {
+    width: 100%;
+}
+
+.max_w-50 {
+    max-width: 50px;
+}
+
+
+/*------------------------------------------------------------------
+    4. header
+-------------------------------------------------------------------*/
+
+.full_container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.inner_container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+
+/*------------------------------------------------------------------
+    7. Table style
+-------------------------------------------------------------------*/
+
+.table_format.strp table {
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    color: #666;
+}
+
+.table_format.strp thead th {
+    background: #15283c;
+    border: none;
+    color: #fff;
+    vertical-align: middle;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1;
+    padding: 22px 40px;
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+.table_format.strp tbody th,
+.table_format.strp tbody td {
+    font-size: 15px;
+    padding: 20px 40px;
+    vertical-align: middle;
+    font-weight: 400;
+    transform: capitalize;
+    line-height: 1;
+    width: white-space;
+}
+
+.top_countries_section {
+    background-color: #ff4748;
+    border-radius: 8px;
+    padding: 25px 40px;
+    background-image: -webkit-linear-gradient(90deg, #396afc 0%, #2948ff 100%);
+}
+
+.top_countries_section ul {
+    list-style: none;
+}
+
+.top_countries_section ul li {
+    color: #fff;
+    padding: 14px 5px;
+    float: left;
+    width: 100%;
+    border-bottom: solid rgba(255, 255, 255, .2) 1px;
+}
+
+.top_countries_section ul li span.country_name {
+    float: left;
+}
+
+.top_countries_section ul li span.country_counter {
+    float: right;
+}
+
+.area_chart {
+    padding: 30px 0 30px 30px;
+    width: 97%;
+}
+
+.margin_bottom_30 {
+    margin-bottom: 30px;
+}
+
+.white_shd {
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    margin-top: 0;
+}
+
+.dark_bg {
+    background: #214162;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    margin-top: 0;
+}
+
+.dark_bg .graph_head {
+    border-bottom: solid rgba(255, 255, 255, .1) 2px;
+}
+
+.dark_bg h2 {
+    color: #fff;
+}
+
+.hidden_form_parts,
+.hidden_for_timeline {
+    display: none;
+}
+
+.my-js-alert {
+    display: none;
+}
+
+.max_width_350 {
+    width: 350px !important;
+}
+
+.repeater-button-dd {
+    padding: 1px 5px;
+    border: none;
+    position: absolute;
+    z-index: 99999;
+    /* right: -20px;
+    top: -78px; */
+    background: #343a40;
+    color: #bfff00;
+    border-top-right-radius: 3px;
+}
+
+.mi-repeater {
+    border: 2px solid red !important;
+}
+
+.error-input-value {
+    color: red !important;
+    font-weight: bold !important;
+}
+
+
+.license_details_table {
+    width: 100%;
+}
+
+.license_details_table tr th,
+.license_details_table tr td {
+    text-align: center !important;
+    border: 1px solid #bfbfbf;
+}
+
+.license_details_table tr th {}
+
+.license_details_table tr td {}
+
+.license_details_table_2 {
+    width: 100%;
+}
+
+.license_details_table_2 tr th,
+.license_details_table_2 tr td {
+    border: none;
+}
+
+.license_details_table_2 tr th {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.license_details_table_2 tr td {
+    padding-left: 10px;
+}
+
+.license_details_table_2 tr th label {
+    margin: auto;
+}
+
+.save-button-container {
+    display: none !important;
+}
+
+.responsive_table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.inpu_feild_border {
+    border-right-style: none;
+    border-left-style: none;
+    border-top-style: none;
+}
